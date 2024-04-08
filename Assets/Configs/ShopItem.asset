@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: TT
   Cost: 100
-  Image: {fileID: 0}
+  Image: {fileID: 21300000, guid: 93e157f064d60e24c9bed30d7ddab0b7, type: 3}

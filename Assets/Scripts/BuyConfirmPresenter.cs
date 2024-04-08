@@ -3,11 +3,11 @@ using UnityEngine.UI;
 
 public class BuyConfirmPresenter : IPresenter
 {
-    private readonly Image _image;
+    private readonly Sprite _image;
     private readonly int _cost;
     private readonly string _name;
 
-    public Image Image => _image;
+    public Sprite Image => _image;
     public int Cost => _cost;
     public string Name => _name;
     

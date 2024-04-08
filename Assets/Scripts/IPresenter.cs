@@ -1,8 +1,8 @@
-using UnityEngine.UI;
+using UnityEngine;
 
 public interface IPresenter
 {
-    Image Image { get; }
+    Sprite Image { get; }
     int Cost { get; }
     string Name { get; }
 

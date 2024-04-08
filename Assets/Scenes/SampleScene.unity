@@ -363,10 +363,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94b541b7b69aa9d449e001ce095171e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 743264165}
-  buttonConfirm: {fileID: 26068366}
-  buttonCancel: {fileID: 1381164007}
-  text: {fileID: 1672439555}
+  _image: {fileID: 743264165}
+  _buttonConfirm: {fileID: 26068366}
+  _buttonCancel: {fileID: 1381164007}
+  _text: {fileID: 1672439555}
 --- !u!1 &648539482
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,7 +1275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ec847bf8e136764dacfb89c366d653f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popup: {fileID: 117594076}
+  _popup: {fileID: 117594076}
   _buyButton: {fileID: 1376242874}
   _item:
   - {fileID: 11400000, guid: 99108298ce18eba47bc4cd0d5d2fb238, type: 2}

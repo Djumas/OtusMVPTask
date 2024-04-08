@@ -13,7 +13,7 @@ public class ConfirmBuyItemPopUp : MonoBehaviour
     public void Show(IPresenter presenter)
     {
         _presenter = presenter;
-        _image = presenter.Image;
+        _image.sprite = presenter.Image;
         _text.text = $"Spend {presenter.Cost} gems on {presenter.Name}?";
         _buttonCancel.onClick.AddListener(OnCancel);
         _buttonConfirm.onClick.AddListener(OnConfirm);

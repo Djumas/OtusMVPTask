@@ -6,5 +6,6 @@ public class ShopItemSO : ScriptableObject
 {
     public string Name;
     public int Cost;
-    public Image Image;
+    public Sprite Image;
+
 }
