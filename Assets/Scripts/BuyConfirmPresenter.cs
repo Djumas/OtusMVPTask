@@ -1,25 +1,33 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class BuyConfirmPresenter
+public class BuyConfirmPresenter : IPresenter
 {
-    public Sprite image;
-    public int cost;
-    public string name;
+    private Image _image;
+    private int _cost;
+    private string _name;
+
+    public Image Image => _image;
+    public int Cost => _cost;
+    public string Name => _name;
+    
 
     public BuyConfirmPresenter(ShopItemSO item)
     {
-        image = item.image;
-        cost = item.cost;
-        name = item.name;
+        _image = item.Image;
+        _cost = item.Cost;
+        _name = item.Name;
     }
 
-    public void OnConfirm() {
+    public void OnConfirm() 
+    {
         Debug.Log("Purchase confirmed");
+        MoneyStorage.Instance.SpendMoney(_cost);
+
     }
 
-    public void OnCancel() {
+    public void OnCancel() 
+    {
         Debug.Log("Purchase canceled");
     }
 }

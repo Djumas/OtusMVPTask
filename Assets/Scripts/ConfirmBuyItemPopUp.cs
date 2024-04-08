@@ -1,23 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class ConfirmBuyItemPopUp : MonoBehaviour
 {
-    [SerializeField] private Sprite image;
+    [SerializeField] private Image image;
     [SerializeField] private Button buttonConfirm;
     [SerializeField] private Button buttonCancel;
     [SerializeField] private TMP_Text text;
-    private BuyConfirmPresenter _presenter;
+    private IPresenter _presenter;
 
-    public void Show(BuyConfirmPresenter presenter)
+    public void Show(IPresenter presenter)
     {
         _presenter = presenter;
-        gameObject.SetActive(true);
-        image = presenter.image;
-        text.text = $"Spend {presenter.cost} gems on {presenter.name}?";
+        image = presenter.Image;
+        text.text = $"Spend {presenter.Cost} gems on {presenter.Name}?";
         buttonCancel.onClick.AddListener(OnCancel);
         buttonConfirm.onClick.AddListener(OnConfirm);
     }
