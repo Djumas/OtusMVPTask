@@ -3,9 +3,9 @@ using UnityEngine.UI;
 
 public class BuyConfirmPresenter : IPresenter
 {
-    private Image _image;
-    private int _cost;
-    private string _name;
+    private readonly Image _image;
+    private readonly int _cost;
+    private readonly string _name;
 
     public Image Image => _image;
     public int Cost => _cost;

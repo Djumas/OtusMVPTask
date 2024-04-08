@@ -22,6 +22,4 @@ public class MoneyStorage : MonoBehaviour
         _money -= money;
         _moneyText.text = _money.ToString();
     }
-
-    
 }

@@ -8,7 +8,7 @@ public class BuyButtonHandler : MonoBehaviour
     [SerializeField] ConfirmBuyItemPopUp _popup;
 
     [SerializeField] Button _buyButton;
-    readonly List<IPresenter> _buyConfirmPresenters = new List<IPresenter>();
+    readonly List<IPresenter> _buyConfirmPresenters = new();
 
     [SerializeField] private List<ShopItemSO> _item;
 
@@ -37,6 +37,6 @@ public class BuyButtonHandler : MonoBehaviour
     }
     private void OnDisable()
     {
-        _buyButton?.onClick.RemoveListener(ShowPopUp);
+        _buyButton.onClick.RemoveListener(ShowPopUp);
     }
 }

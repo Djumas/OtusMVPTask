@@ -3,7 +3,7 @@ using UnityEngine.UI;
 public interface IPresenter
 {
     Image Image { get; }
-    int Cost {  get;}
+    int Cost { get; }
     string Name { get; }
 
     void OnCancel();
